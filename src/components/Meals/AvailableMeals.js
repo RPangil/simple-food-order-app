@@ -1,7 +1,7 @@
+import { useCallback, useEffect, useState } from 'react';
 import MealItem from './MealItem';
 import Card from '../UI/Card';
 import classes from './AvailableMeals.module.css';
-import { useCallback, useEffect, useState } from 'react';
 
 const dbURL = 'https://simple-food-app-35758-default-rtdb.firebaseio.com/meals.json';
 
@@ -54,7 +54,7 @@ const AvailableMeals = () =>
         fetchMeals();
     }, [fetchMeals]);
 
-    let content = <p>No meals found</p>;
+    let content = <p className={classes.utilText}>No meals found</p>;
 
     if(meals.length > 0)
     {
@@ -71,12 +71,12 @@ const AvailableMeals = () =>
 
     if(error)
     {
-        content = <p>{error}</p>
+        content = <p className={classes.utilText}>{error}</p>
     }
 
     if(isLoading)
     {
-        content = <p>Loading...</p>
+        content = <p className={classes.utilText}>Loading...</p>
     }
 
     return (
