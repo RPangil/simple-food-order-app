@@ -15,13 +15,13 @@
     top: 50%;
     left: 50%;
     width: 90%;
-    background-color: white;
+    display: block;
     padding: 1rem;
+    background-color: white;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 30;
     animation: slide-down 300ms ease-out forwards;
-    transform: translate(-50%, -50%);
 }
 
 @media (min-width: 768px) 
@@ -29,7 +29,6 @@
     .modal 
     {
         max-width: 40rem;
-        left: calc(50% - 20rem);
     }
 }
 
@@ -38,11 +37,11 @@
     from 
     {
         opacity: 0;
-        transform: translateY(-3rem);
+        transform: translate(-50%, -75%);
     }
     to 
     {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate(-50%, -50%);
     }
 }

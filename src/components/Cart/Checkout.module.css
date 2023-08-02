@@ -36,12 +36,13 @@
 .actions button 
 {
 	font: inherit;
-	color: #5a1a01;
+	color: #CE1226;
 	cursor: pointer;
 	background-color: transparent;
 	border: none;
 	border-radius: 25px;
 	padding: 0.5rem 2rem; 
+    transition: background-color 0.3s ease;
 }
 
 .actions button:hover,
@@ -52,15 +53,15 @@
 
 .actions .submit 
 {
-	border: 1px solid #5a1a01;
-	background-color: #5a1a01;
+	border: 1px solid #CE1226;
+	background-color: #CE1226;
 	color: white;
 }
 
 .actions .submit:hover,
 .actions .submit:active 
 {
-	background-color: #7a2706;
+	background-color: #CE1226;
 }
 
 .invalid label 
