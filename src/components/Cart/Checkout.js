@@ -84,7 +84,7 @@ const Checkout = (props) =>
 				{!formInputIsValid.zip && <p>Please enter your zip code</p>}
 			</div>
 			<div className={classes.actions}>
-				<button type='button' onClick={props.Cancel}>Cancel</button>
+				<button type='button' onClick={props.onCancel}>Cancel</button>
 				<button className={classes.submit}>Confirm</button>
 			</div>
 		</form>
